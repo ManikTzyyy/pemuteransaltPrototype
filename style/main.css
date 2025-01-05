@@ -1,0 +1,91 @@
+* {
+  --main-clr: #109fcf;
+  --second-clr: #3cc3f0;
+  --third-clr: #ead8b143;
+  --black-clr: #000000;
+  
+}
+/* g Typography */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* g End Typography */
+
+/* g Row & Column */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row-r {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.column-r {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* g end Row & Column */
+
+.container {
+  padding: 45px 0;
+}
+.social-wrapper {
+  gap: 10px;
+}
+.social-wrapper a {
+  background-color: var(--third-clr);
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.social-wrapper a:hover {
+  background-color: white;
+  color: black;
+}
+.contact-information span {
+  padding-right: 10px;
+}
+
+.fa-solid.fa-arrow-right{
+  rotate: -45deg;
+}
+
+/* r button */
+.button {
+  padding-top: 8px;
+}
+.button a{
+  text-decoration:none ;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+.button.main a{
+  background-color: var(--main-clr);
+}
+.button.main a:hover{
+  background-color: #0c7ca1 ;
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 768px) {
+}
