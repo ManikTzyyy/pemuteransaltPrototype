@@ -2,9 +2,6 @@ body {
   background: linear-gradient(to left, #3cc3f057, #ffffff);
 }
 
-* {
-  border: 1px solid red;
-}
 
 #hero-home {
   background-image: url("../assets/img/hero-main.webp");
