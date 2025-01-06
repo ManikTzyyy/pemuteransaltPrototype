@@ -17,6 +17,11 @@
 #footer .content:nth-child(2) {
   gap: 20px;
 }
+
+#footer .contact-information p{
+  padding: 5px 0;
+}
+
 #footer .footer-nav p {
   margin: 0;
   padding: 0;

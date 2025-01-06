@@ -3,7 +3,6 @@
   --second-clr: #3cc3f0;
   --third-clr: #ead8b143;
   --black-clr: #000000;
-  
 }
 /* g Typography */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -11,7 +10,19 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  
 }
+
+
+h2 {
+  color: var(--second-clr);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -55,6 +66,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: white;
+  transition: all 0.5s ease;
 }
 .social-wrapper a:hover {
   background-color: white;
@@ -64,25 +76,48 @@ body {
   padding-right: 10px;
 }
 
-.fa-solid.fa-arrow-right{
+.fa-solid.fa-arrow-right {
   rotate: -45deg;
+  transition: all 0.5s ease;
 }
 
 /* r button */
 .button {
   padding-top: 8px;
 }
-.button a{
-  text-decoration:none ;
+.button a {
+  text-decoration: none;
   color: white;
   padding: 8px 15px;
   border-radius: 10px;
+  transition: all 0.5s ease;
 }
-.button.main a{
+.button.main a {
   background-color: var(--main-clr);
 }
-.button.main a:hover{
-  background-color: #0c7ca1 ;
+.button.main a:hover {
+  background-color: #0c7ca1;
+}
+
+/* r Link button */
+
+.link-button a {
+  text-decoration: none;
+  background-color: var(--second-clr);
+  width: 45px;
+  height: 45px;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.link-button a:hover{
+  background-color: var(--main-clr);
 }
 
 @media (max-width: 480px) {

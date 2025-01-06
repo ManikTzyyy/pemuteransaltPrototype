@@ -1,0 +1,14 @@
+
+  .overlay {
+    width: 300px;
+    height: 205px;
+    background: url('../assets/img/experience.webp') no-repeat center center; 
+    background-size: cover;
+    -webkit-mask-image: url('../assets/img/shape1.webp'); 
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url('../assets/img/shape1.webp');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    opacity: 0.9;
+  }
