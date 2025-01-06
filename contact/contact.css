@@ -67,23 +67,24 @@ body {
 }
 
 #contact-container input:focus + label {
-  transform: translateY(-15px);
+  transform: translateY(-18px);
   color: var(--main-clr);
   outline: none;
   background-color: transparent;
 }
 
 #contact-container input:not(:placeholder-shown) + label {
-  transform: translateY(-15px);
+  transform: translateY(-18px);
   color: var(--main-clr);
   outline: none;
   background-color: transparent;
 }
 
 #contact-container input:focus {
-  border: none; /* Pastikan tidak ada border penuh */
-  border-bottom: 2px solid var(--main-clr); /* Ubah ketebalan atau warna */
-  outline: none; /* Hilangkan outline default */
+    background-color: transparent;
+  border: none; 
+  border-bottom: 2px solid var(--main-clr); 
+  outline: none; 
 }
 
 .form-button {
