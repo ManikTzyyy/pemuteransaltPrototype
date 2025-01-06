@@ -1,0 +1,141 @@
+body {
+  background: linear-gradient(to left, #3cc3f057, #ffffff);
+}
+
+#second-hero {
+  background-color: var(--main-clr);
+  height: 40vh;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}
+
+#second-hero .title-wrapper {
+  width: 30%;
+  padding-left: 150px;
+}
+
+#second-hero .title-wrapper p {
+  color: rgba(209, 209, 209, 0.805);
+}
+
+/* R end hero */
+#contact-container {
+  min-height: 300px;
+  position: relative;
+  top: -50px;
+  justify-content: center;
+  filter: drop-shadow(0 0 10px gray);
+}
+#contact-container .content {
+  background-color: white;
+}
+#contact-container .content:nth-child(1) {
+  padding: 20px;
+  max-width: 40%;
+}
+#contact-container .content:nth-child(2) {
+  background-color: var(--second-clr);
+  padding: 20px;
+  justify-content: space-between;
+}
+
+#contact-container .contact-information {
+  gap: 30px;
+  color: white;
+}
+
+#contact-container form {
+  padding-top: 20px;
+}
+
+#contact-container .form-label {
+  position: relative;
+  top: -25px;
+  color: gray;
+  transition: all 0.5s ease;
+}
+
+#contact-container .form-control {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  max-width: 300px;
+  padding: 5px 0;
+  position: relative;
+  z-index: 20;
+}
+
+#contact-container input:focus + label {
+  transform: translateY(-15px);
+  color: var(--main-clr);
+  outline: none;
+  background-color: transparent;
+}
+
+#contact-container input:not(:placeholder-shown) + label {
+  transform: translateY(-15px);
+  color: var(--main-clr);
+  outline: none;
+  background-color: transparent;
+}
+
+#contact-container input:focus {
+  border: none; /* Pastikan tidak ada border penuh */
+  border-bottom: 2px solid var(--main-clr); /* Ubah ketebalan atau warna */
+  outline: none; /* Hilangkan outline default */
+}
+
+.form-button {
+  background-color: var(--second-clr);
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.form-button:hover {
+  background-color: var(--main-clr);
+  cursor: pointer;
+}
+
+#location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#location .map-wrapper {
+  width: 100%;
+  height: 400px;
+}
+#location iframe {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  /* border: 1px solid green; */
+}
+
+@media (max-width: 480px) {
+  #contact-container {
+    flex-direction: column;
+  }
+  #contact-container .content:nth-child(1) {
+    padding: 20px;
+    max-width: 100%;
+  }
+  #contact-container .content:nth-child(2) {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #second-hero .title-wrapper {
+    width: 100%;
+    padding-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+}

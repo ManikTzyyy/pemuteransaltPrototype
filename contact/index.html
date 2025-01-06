@@ -12,22 +12,23 @@
     />
     <!-- b mycss -->
     <link rel="stylesheet" href="../style/main.css" />
-    <link rel="stylesheet" href="../style/navbar.css">
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="./contact.css" />
   </head>
   <body>
     <!-- Navbar -->
     <div id="navbar">
       <div class="navbar">
         <div class="logo">
-          <p> Logo </p>
+          <p>Logo</p>
         </div>
         <div class="nav-list" id="navList">
-          <a href="../" >Home</a>
-          <a href="../about/" >About Us</a>
+          <a href="../">Home</a>
+          <a href="../about/">About Us</a>
           <a href="../product/">Product</a>
           <a href="../gallery/">Gallery</a>
-          <a href="../saltProcess/" >Salt Proccess</a>
+          <a href="../saltProcess/">Salt Proccess</a>
           <a href="../contact/" class="active">Contact</a>
         </div>
         <div class="bar">
@@ -39,12 +40,92 @@
     </div>
     <!-- End Navbar -->
 
+    <!-- Y second-hero -->
+
+    <section id="second-hero" class="row">
+      <div class="title-wrapper">
+        <h1 style="font-weight: bold">Get in Touch</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor in
+        </p>
+      </div>
+    </section>
+
+     <!-- Y end second-hero -->
+
+    <section id="contact-container" class="row">
+      <div class="content">
+        <h2>Send us a Message</h2>
+        <p>
+          Need assistance or have questions? We're here for you! Send us a
+          message, and our team will respond promptly.
+        </p>
+        <form action="mailto:gelbalisalt@gmail.com?body=Message" method="get">
+          <div class="column">
+            <input
+              name="subject"
+              type="text"
+              class="form-control"
+              placeholder=""
+            />
+            <label for="fancy-input" class="form-label">Name</label>
+          </div>
+          <div class="column">
+            <input
+              name="body"
+              type="text"
+              class="form-control"
+              placeholder=""
+            />
+            <label for="fancy-input" class="form-label">Message</label>
+          </div>
+          <button type="submit" class="form-button">
+            Submit <span><i class="fa-solid fa-paper-plane"></i></span>
+          </button>
+        </form>
+      </div>
+      <div class="content column">
+        <h2 style="color: white">Contact Information</h2>
+        <div class="contact-information column">
+          <p>
+            <span><i class="fa-solid fa-location-dot"></i></span>Bali, Indonesia
+          </p>
+          <p>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            gelbalisalt@gmail.com
+          </p>
+          <p>
+            <span><i class="fa-solid fa-phone"></i></span> +62 813-3854-3121
+          </p>
+        </div>
+        <div class="social-wrapper row">
+          <a href="https://wa.me/+6281338543121"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/baliartisansalt/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section id="location">
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d2874.596642819235!2d114.65342128147755!3d-8.145933649998092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-8.1454384!2d114.65315559999999!5e0!3m2!1sen!2sid!4v1736164336649!5m2!1sen!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+     
+    </section>
+
     <!-- y Footer -->
     <div id="footer-placeholder"></div>
     <!-- y End Footer -->
 
     <!--r script -->
-     <script src="../scripts/navbar.js"></script>
-     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/footer.js"></script>
   </body>
 </html>
