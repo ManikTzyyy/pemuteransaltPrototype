@@ -12,23 +12,23 @@
     />
     <!-- b mycss -->
     <link rel="stylesheet" href="../style/main.css" />
-    <link rel="stylesheet" href="../style/navbar.css">
-    <link rel="stylesheet" href="../style/footer.css">
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="./about.css" />
   </head>
   <body>
     <!--y Navbar -->
     <div id="navbar">
       <div class="navbar">
         <div class="logo">
-          <p> Logo </p>
+          <p>Logo</p>
         </div>
         <div class="nav-list" id="navList">
-          <a href="../" >Home</a>
+          <a href="../">Home</a>
           <a href="../about/" class="active">About Us</a>
           <a href="../product/">Product</a>
           <a href="../gallery/">Gallery</a>
-          <a href="../saltProcess/" >Salt Proccess</a>
+          <a href="../saltProcess/">Salt Proccess</a>
           <a href="../contact/">Contact</a>
         </div>
         <div class="bar">
@@ -40,16 +40,117 @@
     </div>
     <!--y End Navbar -->
 
-    <div class="container-test">
-      <div class="overlay"></div>
+    <!-- y contet -->
+    <div id="about" class="column">
+      <video src="../assets/vid/bg.mp4" autoplay muted loop></video>
+      <div class="container-grid column">
+        <div class="container-header">
+          <div class="content text">
+            <h3>The Story</h3>
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. accusamus
+              temporibusaspernatur odio labore eligendi sit velit ipsum
+              ex aperiam, voluptatum ad! Hic, earum?
+            </h5>
+          </div>
+          <div class="content img">
+            <img src="../assets/img/person.webp" alt="" />
+          </div>
+          <div class="content menu column">
+            <div class="name-wrapper column">
+              <h5>CEO & Founder</h5>
+              <h3>Name</h3>
+            </div>
+            <div class="social-wrapper row">
+              <a href="https://wa.me/+6281338543121"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/baliartisansalt/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="nav-icon-menu row">
+              <a href="../">
+                <i class="fa-solid fa-home"></i>
+              </a>
+            
+              <a href="../saltProcess/">
+                <i class="fa-solid fa-cube"></i>
+              </a>
+              <a href="../contact/">
+                <i class="fa-solid fa-comment-dots"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-body">
+          <div class="content img-abt-container">
+            <div class="container-img-abt row">
+              <div class="img-abt shrink">
+                <img src="../assets/img/proses.webp" alt="" />
+              </div>
+              <div class="img-abt">
+                <img src="../assets/img/experience.webp" alt="" />
+              </div>
+              <div class="img-abt">
+                <img src="../assets/img/product-card.webp" alt="" />
+              </div>
+              <div class="img-abt">
+                <img src="../assets/img/story.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="content text">
+            <h3>Vision</h3>
+            <h5>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+            </h5>
+          </div>
+          <div class="content text">
+            <h3>Mision</h3>
+            <h5>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            </h5>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- y end content -->
+
+    <section>
+      <div class="container text">
+        <h2>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, at!
+        </h2>
+      </div>
+    </section>
 
     <!-- y Footer -->
     <div id="footer-placeholder"></div>
     <!-- y End Footer -->
 
     <!--r script -->
-     <script src="../scripts/navbar.js"></script>
-     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/footer.js"></script>
+
+    <script>
+      // Ambil semua elemen .img-abt
+      const imgAbts = document.querySelectorAll(".img-abt");
+
+      // Tambahkan event listener ke setiap elemen .img-abt
+      imgAbts.forEach((img) => {
+        img.addEventListener("mouseenter", () => {
+          // Hapus kelas shrink dari semua elemen
+          imgAbts.forEach((otherImg) => {
+            otherImg.classList.remove("shrink");
+          });
+
+          // Tambahkan kelas shrink ke elemen yang sedang di-hover
+          img.classList.add("shrink");
+        });
+      });
+    </script>
   </body>
 </html>

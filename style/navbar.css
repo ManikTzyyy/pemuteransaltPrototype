@@ -32,9 +32,10 @@
 }
 .nav-list .active {
   font-weight: bold;
+  
 }
 .nav-list a {
-  color: var(--black-clr);
+  color: white;
   text-decoration: none;
   width: max-content;
   position: relative;
@@ -57,9 +58,13 @@
 .nav-list a:hover::after {
   width: 100%;
 }
+#navbar.scrolled a {
+  color: var(--black-clr);
+}
 #navbar.scrolled {
   background: white;
   box-shadow: 0 5px 10px #1a1a1d23;
+  
 }
 
 /* end navbar */
@@ -74,6 +79,10 @@
     grid-template-columns: repeat(2, 1fr);
     z-index: 99;
     padding: 10px 5px;
+  }
+
+  .navbar a {
+    color:  black;
   }
   .navbar .nav-list {
     background-color: white;

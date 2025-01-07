@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(to left, #3cc3f057, #ffffff);
+}
+
+#second-hero {
+  background-color: var(--main-clr);
+  height: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+#second-hero .img-wrapper {
+  width: 450px;
+  height: auto;
+  position: relative;
+  bottom: -60px;
+}
+#second-hero .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#second-hero .title-wrapper p {
+  color: rgba(209, 209, 209, 0.805);
+}
+
+#second-hero .title-wrapper  {
+    padding: 0 0 0 20px ;
+  }
+
+/* r end hero */
+#salt-proses {
+  padding: 90px 10px;
+}
+
+#salt-proses .content-wrapper {
+  gap: 20px;
+}
+
+#salt-proses h3 {
+  font-weight: bold;
+}
+
+#salt-proses .text-wrapper {
+  max-width: 50%;
+}
+
+#salt-proses .img-wrapper {
+  position: relative;
+  width: 350px;
+  height: 230px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+#salt-proses .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#salt-proses .number-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+#salt-proses .number {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+#salt-proses .v-line {
+  height: 250px;
+  width: 3px;
+  background-color: black;
+}
+
+@media (max-width: 480px) {
+
+}
+@media (max-width: 768px) {
+  #salt-proses {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+  }
+  #salt-proses .content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #salt-proses .number-wrapper {
+    justify-self: start;
+    align-self: flex-start;
+    position: relative;
+    bottom: -50px;
+    padding-left: 10px;
+    z-index: 10;
+  }
+  
+
+  #salt-proses .text-wrapper {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  #salt-proses .v-line {
+    display: none;
+  }
+
+  #salt-proses .img-wrapper {
+    width: 90vw;
+  }
+
+  #second-hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-bottom: 40px;
+   
+  }
+
+  #second-hero .img-wrapper {
+    width: 80vw;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    top: 0;
+  }
+
+  #second-hero .title-wrapper  {
+    padding: 0 10px;
+  }
+  
+}
