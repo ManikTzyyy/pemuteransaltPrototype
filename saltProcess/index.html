@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="../style/navbar.css" />
     <link rel="stylesheet" href="../style/footer.css" />
     <link rel="stylesheet" href="./saltproses.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -61,7 +65,7 @@
 
     <!-- Y content -->
     <section id="salt-proses" class="column">
-      <div class="content-wrapper row">
+      <div class="content-wrapper row" data-aos="fade-right">
         <div class="number-wrapper column">
           <div class="number"><h3>1</h3></div>
           <div class="v-line"></div>
@@ -78,7 +82,7 @@
           </p>
         </div>
       </div>
-      <div class="content-wrapper row">
+      <div class="content-wrapper row" data-aos="fade-right">
         <div class="number-wrapper column">
           <div class="number"><h3>2</h3></div>
           <div class="v-line"></div>
@@ -95,7 +99,7 @@
           </p>
         </div>
       </div>
-      <div class="content-wrapper row">
+      <div class="content-wrapper row" data-aos="fade-right">
         <div class="number-wrapper column">
           <div class="number"><h3>3</h3></div>
           <div class="v-line"></div>
@@ -122,5 +126,9 @@
     <!--r script -->
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/footer.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
