@@ -12,23 +12,24 @@
     />
     <!-- b mycss -->
     <link rel="stylesheet" href="../style/main.css" />
-    <link rel="stylesheet" href="../style/navbar.css">
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="./product.css" />
   </head>
   <body>
     <!-- Navbar -->
     <div id="navbar">
       <div class="navbar">
         <div class="logo">
-          <p> Logo </p>
+          <p>Logo</p>
         </div>
         <div class="nav-list" id="navList">
-          <a href="../" >Home</a>
-          <a href="../about/" >About Us</a>
+          <a href="../">Home</a>
+          <a href="../about/">About Us</a>
           <a href="../product/" class="active">Product</a>
-          <a href="../gallery/" >Gallery</a>
-          <a href="../saltProcess/" >Salt Proccess</a>
-          <a href="../contact/" >Contact</a>
+          <a href="../gallery/">Gallery</a>
+          <a href="../saltProcess/">Salt Proccess</a>
+          <a href="../contact/">Contact</a>
         </div>
         <div class="bar">
           <a href="javascript:void(0);" id="menuToggle"
@@ -37,14 +38,137 @@
         </div>
       </div>
     </div>
-    <!-- End Navbar -->
+    <!-- y End Navbar -->
+
+    <!-- Y second-hero -->
+
+    <section id="second-hero" class="row">
+      <div class="title-wrapper">
+        <h1 style="font-weight: bold">Our Product</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor in
+        </p>
+      </div>
+    </section>
+
+    <!-- Y end second-hero -->
+
+    <section id="product" class="container column">
+      <div class="content header row" id="header">
+        <div class="filter row">
+          <div class="button-cat active">
+            <a href="">All</a>
+          </div>
+          <div class="button-cat">
+            <a href="">New</a>
+          </div>
+          <div class="button-cat">
+            <a href="">Original</a>
+          </div>
+          <div class="button-cat">
+            <a href="">Flavour</a>
+          </div>
+        </div>
+        <div class="search row">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            onkeyup="searchItems()"
+            class="search-input"
+          />
+          <button type="submit" class="search-button">
+            Submit <span><i class="fa-solid fa-search"></i></span>
+          </button>
+        </div>
+      </div>
+      <div class="content body row">
+        <div class="card-container">
+          <div class="card column">
+            <div class="img-wrapper">
+              <h5 class="category">Original</h5>
+              <img src="../assets/img/product.webp" alt="" id="img1" />
+              <div class="product-name">
+                <h5>
+                  Product Name Lorem
+                </h5>
+              </div>
+            </div>
+            <div class="price row">
+              <p>IDR 110k</p>
+              <div class="button-shop">
+                <a href=""
+                  >Shop Now
+                  <span> <i class="fa-solid fa-shopping-cart"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card column">
+            <div class="img-wrapper">
+              <h5 class="category">Original</h5>
+              <img src="../assets/img/product-card.webp" alt="" id="img2" />
+              <div class="product-name">
+                <h5>Product Name Lorem</h5>
+              </div>
+            </div>
+            <div class="price row">
+              <p>IDR 110.000</p>
+              <div class="button-shop">
+                <a href=""
+                  >Shop Now
+                  <span> <i class="fa-solid fa-shopping-cart"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h5 class="row cat-modal">Product Name Lorem <span><h5 class="category">Original</h5></span></h5>
+        <img src="../assets/img/product.webp" alt="Product 1" />
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h5 class="row cat-modal">Product Name Lorem <span><h5 class="category">Original</h5></span></h5>
+        <img src="../assets/img/product-card.webp" alt="Product 2" />
+      </div>
+    </div>
 
     <!-- y Footer -->
     <div id="footer-placeholder"></div>
     <!-- y End Footer -->
 
     <!--r script -->
-     <script src="../scripts/navbar.js"></script>
-     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/modalimg.js"></script>
+
+    <script>
+      let lastScrollPosition = 0;
+      const header = document.getElementById("header");
+
+      window.addEventListener("scroll", () => {
+        const currentScrollPosition = window.pageYOffset;
+
+        if (currentScrollPosition > lastScrollPosition) {
+          // Scrolling ke bawah, sembunyikan header
+          header.classList.add("header-hidden");
+        } else {
+          // Scrolling ke atas, tampilkan header
+          header.classList.remove("header-hidden");
+        }
+
+        lastScrollPosition = currentScrollPosition;
+      });
+    </script>
   </body>
 </html>
